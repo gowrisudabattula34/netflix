@@ -4,7 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <title>NetflixClone</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  background-color: #000;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+}
+
+/* Main container */
+.nav-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+/* Logo */
+.logo {
+  color: #e50914;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e50914;
+}
+
+/* Login Button */
+.nav-section {
+  padding: 8px 16px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-section:hover {
+  background-color: #f6121d;
+}
+
+/* --------hero section--------- */
+.hero-section{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.hero-parent{
+    position: relative;
+}
+.hero-parent img{
+    opacity: 0.5;
+}
+
+.hero-child{
+    position: absolute;
+    width: 100%;
+    bottom: 45%;
+    left: 43%;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+.hero-child2{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 40%;
+    color: white;
+}
+
+.btn{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* ---------section 1------- */
+.telugu-section h2{
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.telugu{
+    display: flex;
+}
+.telugu img{
+    padding-right: 20px;
+}
+/* suspense */
+.suspense-section h2{
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.suspense{
+    display: flex;
+}
+.suspense img{
+    padding-right: 20px;
+}
+/* horror section */
+.horror-section h2{
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.horror{
+    display: flex;
+}
+.horror img{
+    padding-right: 20px;
+}
+/* footer */
+.footer-section{
+    padding: 50px;
+    display: flex;
+}
+.footer{
+    color: white;
+}
+.footer-para{
+    padding-top: 20px;
+}
+.footer2{
+    color: white;
+    padding: 50px;
+    padding-left: 200px;
+}
+.footer1{
+    padding: 20px;
+}
+.footer3{
+    color: white;
+    padding: 50px;
+    padding-left: 200px;
+}
+    </style>
 </head>
 
 <body>
@@ -29,18 +199,23 @@
 
     <!-- ----------hero section---------- -->
 
-    <section>
+    <section classs="hero-section">             
         <div class="hero-parent">
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/3d31dac6-aaf0-4e6e-8bd7-e16c5d9cd9a3/web/IN-en-20260119-TRIFECTA-perspective_cce70d60-69c5-428f-99cf-44c212fcec3f_large.jpg" alt="" height="700px" width="100%">
-            <div class="hero-child">
+            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/3d31dac6-aaf0-4e6e-8bd7-e16c5d9cd9a3/web/IN-en-20260119-TRIFECTA-perspective_cce70d60-69c5-428f-99cf-44c212fcec3f_large.jpg" alt="" height="700px" width="100%" class="img">
+            <div class="hero-child2">
+                <h1>Unlimited Movies,<br>TV Shows & More</h1>
+                <p>Start at 149. Cancel at any time<br>Ready to watch?</p>
+            </div>
+             <div class="hero-child">
 
                 <a href="https://youtu.be/wT4HcYAeV5U?si=Ylo_SpLoLOLABait" class="btn">WATCH NOW</a>
 
 
-            </div>
+            </div> 
 
         </div>
     </section>
+    
     <!-- Telugu movies -->
     <section>
         <div class="telugu-section">
